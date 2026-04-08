@@ -1,0 +1,23 @@
+SELECT 
+  Id,
+  -- Average minutes spent in each activity zone
+  ROUND(AVG(VeryActiveMinutes), 1) AS avg_very_active_mins,
+  ROUND(AVG(FairlyActiveMinutes), 1) AS avg_fairly_active_mins,
+  ROUND(AVG(LightlyActiveMinutes), 1) AS avg_lightly_active_mins,
+  ROUND(AVG(SedentaryMinutes), 1) AS avg_sedentary_mins,
+  
+  -- Primary Target Metric
+  ROUND(AVG(Calories), 0) AS avg_daily_calories,
+  
+  -- Total active minutes to see the overall movement profile
+  ROUND(AVG(VeryActiveMinutes + FairlyActiveMinutes + LightlyActiveMinutes), 1) AS total_avg_active_mins,
+
+  -- High-intensity activity as a percentage of total active time
+  ROUND(
+    AVG(VeryActiveMinutes + FairlyActiveMinutes) / 
+    NULLIF(AVG(VeryActiveMinutes + FairlyActiveMinutes + LightlyActiveMinutes), 0) * 100, 
+  1) AS intense_activity_ratio_pct
+
+FROM `fitness-activity-489114.FA.final_fitness_data`
+GROUP BY Id
+ORDER BY avg_daily_calories DESC;
