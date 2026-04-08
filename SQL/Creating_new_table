@@ -1,0 +1,6 @@
+CREATE OR REPLACE TABLE `fitness-activity-489114.FA.final_fitness_data` AS
+SELECT * FROM `fitness-activity-489114.FA.DA`
+WHERE TotalSteps >= 1000
+UNION ALL
+SELECT * FROM `fitness-activity-489114.FA.DA1`
+WHERE TotalSteps >= 1000;
