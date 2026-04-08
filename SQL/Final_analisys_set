@@ -1,0 +1,32 @@
+WITH sleep_daily_metrics AS (
+  SELECT 
+    Id,
+    date,
+    COUNTIF(value = 1) AS minutes_asleep,
+    COUNTIF(value > 1) AS minutes_restless_awake,
+    COUNT(value) AS total_time_in_bed,
+    -- sleep efficiency
+    ROUND(COUNTIF(value = 1) / COUNT(value) * 100, 1) AS sleep_efficiency_pct
+  FROM `fitness-activity-489114.FA.sleep` 
+  GROUP BY Id, date
+)
+
+SELECT 
+  a.Id,
+  a.ActivityDate,
+  a.TotalSteps,
+  a.TotalDistance,
+  a.VeryActiveMinutes,
+  a.FairlyActiveMinutes,
+  a.LightlyActiveMinutes,
+  a.SedentaryMinutes, 
+  a.Calories,
+  s.minutes_asleep,
+  s.minutes_restless_awake,
+  s.total_time_in_bed,
+  s.sleep_efficiency_pct
+FROM `fitness-activity-489114.FA.final_fitness_data` AS a
+LEFT JOIN sleep_daily_metrics AS s
+  ON a.Id = s.Id AND a.ActivityDate = s.date
+WHERE s.minutes_asleep IS NOT NULL 
+ORDER BY a.ActivityDate;
