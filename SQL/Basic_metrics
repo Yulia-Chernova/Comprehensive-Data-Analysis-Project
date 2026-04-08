@@ -1,0 +1,6 @@
+SELECT 
+    COUNT (DISTINCT(ID)),
+    ROUND(AVG(TotalSteps), 0) as daily_avg_steps,
+    ROUND(AVG(TotalDistance), 2) as daily_avg_distance,
+    ROUND(AVG(Calories), 0) as daily_avg_calories
+  FROM `fitness-activity-489114.FA.final_fitness_data`;
