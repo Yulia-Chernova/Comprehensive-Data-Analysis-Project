@@ -1,0 +1,24 @@
+WITH user_avg AS (
+  SELECT 
+    Id, 
+    AVG(TotalSteps) as daily_avg_steps,
+    AVG(TotalDistance) as daily_avg_distance,
+    AVG(Calories) as daily_avg_calories
+  FROM `fitness-activity-489114.FA.final_fitness_data` 
+  GROUP BY Id
+)
+SELECT 
+  CASE 
+    WHEN daily_avg_steps >= 20000 THEN 'Extreme'
+    WHEN daily_avg_steps >= 10000 THEN 'Very active'
+    WHEN daily_avg_steps >= 7500 THEN 'Moderately Active'
+    WHEN daily_avg_steps >= 5000 THEN 'Lightly Active'
+    ELSE 'Sedentary'
+  END as activity_level,
+  COUNT(*) as user_count,
+  ROUND(AVG(daily_avg_steps), 0) as avg_steps_in_group,
+  ROUND(AVG(daily_avg_distance), 2) as avg_distance_in_group,
+  ROUND(AVG(daily_avg_calories), 0) as avg_calories_in_group
+FROM user_avg
+GROUP BY 1
+ORDER BY avg_steps_in_group DESC;
