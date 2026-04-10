@@ -4,7 +4,7 @@
 The objective of this project is to analyze physical activity and sleep patterns among Fitbit users by combining several analytical tools: **SQL (BigQuery)**, **R (tidyverse)**, **Power BI**, and **Excel (Power Query)**. The project identifies behavioral trends, activity peaks, and the relationship between physical exertion and sleep quality.
 
 ## 📊 Dataset Overview
-This analysis utilizes the **FitBit Fitness Tracker Data** https://www.kaggle.com/datasets/arashnic/fitbit/data (authored by Möbius). 
+This analysis utilizes the [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit) (authored by Möbius). 
 * **Integrated Dataset:** 622 observations across 13 variables.
 * **Participants:** 35 unique users across all tables; 24 users with complete activity + sleep data (used for correlation analysis).
 * **Key Statistics (from R Analysis):**
