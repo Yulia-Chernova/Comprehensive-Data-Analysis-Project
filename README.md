@@ -59,11 +59,12 @@ This analysis utilizes the **FitBit Fitness Tracker Data** https://www.kaggle.co
 * `/excel/` — Files containing Power Query transformations.
 * `/powerbi/` — Interactive Power BI report (`.pbix`).
 * `/docs/` — Screenshots and exported visuals of dashboards and SQL queries.
+* `/data/` — Raw CSV files and Excel file with Power Query transformations.
 
 ## 🔄 Reproducibility
-* **SQL:** Run scripts located in `/sql/` within a BigQuery environment.
-* **R:** Ensure `tidyverse` and `reshape2` packages are installed, then execute `source("r/fitness_activity_analysis.R")`.
+Raw data available on Kaggle. SQL scripts require a BigQuery environment; R scripts require tidyverse and reshape2.
 * **Power BI:** Open `fitness_activity.pbix` in Power BI Desktop to explore the dashboard.
+* **Excel (Power Query)** Open `/data/Fitness Activity Dashboard` in Excel to explore Power Query steps.
 
 ---
 
