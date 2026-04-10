@@ -14,6 +14,8 @@ This analysis utilizes the **FitBit Fitness Tracker Data** https://www.kaggle.co
     * **Average Sleep Duration:** 397 minutes (~6.6 hours).
     * **Average Sleep Efficiency:** 91.2%.
 
+![](docs/dashboard.png)
+
 ---
 
 ## 🛠 Tools & Workflow
