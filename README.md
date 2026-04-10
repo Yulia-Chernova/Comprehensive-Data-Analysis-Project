@@ -63,8 +63,8 @@ This analysis utilizes the [FitBit Fitness Tracker Data](https://www.kaggle.com/
 
 ## 🔄 Reproducibility
 Raw data available on Kaggle. SQL scripts require a BigQuery environment; R scripts require tidyverse and reshape2.
-* **Power BI:** Open `fitness_activity.pbix` in Power BI Desktop to explore the dashboard.
-* **Excel (Power Query)** Open `/data/Fitness Activity Dashboard` in Excel to explore Power Query steps.
+* **Power BI:** Open (`/data/`fitness_activity.pbix`) in Power BI Desktop to explore the dashboard.
+* **Excel (Power Query)** Open (`/data/fitness_activity_dashboard.xlsx` in Excel to explore Power Query steps.
 
 ---
 
