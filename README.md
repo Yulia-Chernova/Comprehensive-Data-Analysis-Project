@@ -71,5 +71,5 @@ Raw data available on Kaggle. SQL scripts require a BigQuery environment; R scri
 
 ## Author
 **Yulia Chernova**
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yulia%20Chernova-blue?logo=linkedin)](https://www.linkedin.com/in/ychernova/)
 *Data Analyst specializing in SQL, Power BI, Excel (Power Query), and R workflows.*
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yulia%20Chernova-blue?logo=linkedin)](https://www.linkedin.com/in/ychernova/)
