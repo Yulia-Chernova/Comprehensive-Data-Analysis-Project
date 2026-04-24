@@ -1,9 +1,9 @@
-# Comprehensive Data Analysis Project: Fitbit Fitness Tracker 🏃‍♀️📊
+# Comprehensive Data Analysis Project: Fitbit Fitness Tracker 
 
-## 🎯 Project Overview
+## Project Overview
 The objective of this project is to analyze physical activity and sleep patterns among Fitbit users by combining several analytical tools: **SQL (BigQuery)**, **R (tidyverse)**, **Power BI**, and **Excel (Power Query)**. The project identifies behavioral trends, activity peaks, and the relationship between physical exertion and sleep quality.
 
-## 📊 Dataset Overview
+## Dataset Overview
 This analysis utilizes the [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit) (authored by Möbius). 
 * **Integrated Dataset:** 622 observations across 13 variables.
 * **Participants:** 35 unique users across all tables; 24 users with complete activity + sleep data (used for correlation analysis).
@@ -39,7 +39,7 @@ This analysis utilizes the [FitBit Fitness Tracker Data](https://www.kaggle.com/
 
 ---
 
-## 🔍 Key Insights
+## Key Insights
 
 ### 1. Activity Trends
 * **Weekly Patterns:** Saturdays are the most active days (avg. 9,396 steps), followed by Tuesdays (avg. 8,971 steps). Sundays represent the lowest activity levels (avg. 7,562 steps).
@@ -53,7 +53,7 @@ This analysis utilizes the [FitBit Fitness Tracker Data](https://www.kaggle.com/
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 * `/data/` — Raw CSV files and Excel file with Power Query transformations.
 * `/docs/` — Screenshots and exported visuals of dashboards and SQL queries.
 * `/excel/` — Files containing Power Query transformations.
@@ -62,7 +62,7 @@ This analysis utilizes the [FitBit Fitness Tracker Data](https://www.kaggle.com/
 * `/sql/` — Scripts for data cleaning, joining, and preparation.
 
 
-## 🔄 Reproducibility
+## Reproducibility
 Raw data available on Kaggle. SQL scripts require a BigQuery environment; R scripts require tidyverse and reshape2.
 * **Power BI:** [Download fitness_activity.pbix](powerbi/fitness_activity.pbix) to explore the dashboard in Power BI Desktop.
 * **Excel (Power Query):** [Open fitness_activity_dashboard.xlsx](excel/fitness_activity_dashboard.xlsx) to explore Power Query steps.
