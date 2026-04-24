@@ -19,7 +19,7 @@ This analysis utilizes the [FitBit Fitness Tracker Data](https://www.kaggle.com/
 
 ---
 
-## 🛠 Tools & Workflow
+## Tools & Workflow
 
 ### **SQL (BigQuery)**
 * Conducted data cleaning and normalization of date formats (US to standard).
@@ -71,4 +71,5 @@ Raw data available on Kaggle. SQL scripts require a BigQuery environment; R scri
 
 ## 👩‍💻 Author
 **Yulia Chernova**
+https://www.linkedin.com/in/ychernova/
 *Data Analyst specializing in SQL, Power BI, Excel (Power Query), and R workflows.*
